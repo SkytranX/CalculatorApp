@@ -34,7 +34,7 @@ public class Calc_Activity extends AppCompatActivity {
         nZero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Calc_Activity.this,"Zero", Toast.LENGTH_LONG).show();
+                Toast.makeText(Calc_Activity.this,"Zero", Toast.LENGTH_SHORT).show();
             }
             });
         nOne.setOnClickListener(new View.OnClickListener() {
