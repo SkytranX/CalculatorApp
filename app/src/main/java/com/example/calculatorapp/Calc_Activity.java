@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Calc_Activity extends AppCompatActivity {
     TextView calcScreen;
-    Button nZero, nOne, nTwo, nThree, nFour, nFive, nSix,nSeven,nEight, nNine;
+    Button nZero, nOne, nTwo, nThree, nFour, nFive, nSix,nSeven,nEight, nNine, nDot, nDel, nDiv, nProd, nSub, nAdd, nEqual;
 
 
     @Override
@@ -30,6 +30,15 @@ public class Calc_Activity extends AppCompatActivity {
         nSeven= findViewById(R.id.n_7);
         nEight= findViewById(R.id.n_8);
         nNine= findViewById(R.id.n_9);
+        nDot= findViewById(R.id.n_Dot);
+        nDel= findViewById(R.id.n_DEL);
+        nDiv= findViewById(R.id.n_Div);
+        nProd= findViewById(R.id.n_Prod);
+        nSub= findViewById(R.id.n_Min);
+        nAdd= findViewById(R.id.n_Add);
+        nEqual= findViewById(R.id.n_Equal);
+
+
 
         nZero.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,6 +100,49 @@ public class Calc_Activity extends AppCompatActivity {
                 Toast.makeText(Calc_Activity.this,"Nine", Toast.LENGTH_LONG).show();
             }
         });
+         nDot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Calc_Activity.this,".", Toast.LENGTH_LONG).show();
+            }
+        });
+         nDel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Calc_Activity.this,"DELETEDELETEDELETE", Toast.LENGTH_LONG).show();
+            }
+        });
+         nDiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Calc_Activity.this,"/", Toast.LENGTH_LONG).show();
+            }
+        });
+         nProd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Calc_Activity.this,"X", Toast.LENGTH_LONG).show();
+            }
+        });
+         nSub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Calc_Activity.this,"-", Toast.LENGTH_LONG).show();
+            }
+        });
+         nAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Calc_Activity.this,"+", Toast.LENGTH_LONG).show();
+            }
+        });
+         nEqual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Calc_Activity.this,"=", Toast.LENGTH_LONG).show();
+            }
+        });
+
 
     }
 }
